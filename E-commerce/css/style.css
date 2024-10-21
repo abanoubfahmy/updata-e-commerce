@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content .brand {
+    font-size: 32px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    min-width: 50px;
+    padding: 5px;
+    margin: 0px 5px;
+}
+nav ul#user_info li {
+    position: relative;
+}
+
+/* Hide user info by default */
+nav ul#user_info {
+    display: block;
+    align-items: center;
+}
+nav ul#user_info li i {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+nav ul#user_info .badge{
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+    color: #fff;
+    text-align: center;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -9px;
+     right: -11px;
+     font-size: 10px;
+     line-height:20px ;
+     display: none;
+
+}
+nav ul#user_info .carts-products{
+    position: absolute;
+    width: 200px;
+    transform:translate(-42%,0);
+    background: #eaeaea; 
+    top: 46px;
+    padding: 10px;
+    border:1px solid green;
+    display: none;
+    
+}
+nav ul#user_info .carts-products a{
+    background: darkgreen;
+    display: block;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+}
+/* products section */
+.products {
+    width: 60%;
+    margin: 10px 0;
+}
+
+.product-item {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.product-item-desc a{
+    display: block;
+    font-size: 25px;
+    color: #333;
+    cursor: pointer;
+}
+.product-item-actions {
+    flex: 1;
+    text-align: right;
+}
+
+
+.product-item-img {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.product-item .add-to-cart {
+    display: block;
+    margin-left: auto;
+    background-color: darkgreen;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+}
+
+.product-item-actions i {
+    cursor: pointer;
+    color: red;
+    padding: 10px;
+}

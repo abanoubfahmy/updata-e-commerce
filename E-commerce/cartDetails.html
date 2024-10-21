@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: "Oswald", sans-serif;
+      }
+
+      .container {
+          width: 80%;
+          margin: auto;
+      }
+
+      header {
+          background-color: #333;
+          padding: 10px 0;
+      }
+
+      .header-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .header-content .brand {
+          font-size: 32px;
+          text-decoration: none;
+          color: #fff;
+      }
+
+      nav ul {
+          display: flex;
+          list-style: none;
+      }
+
+      nav li a {
+          display: block;
+          color: white;
+          min-width: 50px;
+          padding: 5px;
+          margin: 0px 5px;
+      }
+
+      /* Form section */
+      .section-form {
+          margin: 20px auto;
+          text-align: center;
+      }
+
+      .section-form h2 {
+          margin-bottom: 20px;
+      }
+
+      .section-form input {
+          display: block;
+          margin: 10px auto;
+          padding: 10px;
+          width: 80%;
+          max-width: 400px;
+      }
+
+      .section-form a {
+          display: block;
+          margin-top: 10px;
+      }
+    </style>
+
+    <title>Shopping Cart | Register page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="brand">Shopping cart </a>
+          <nav>
+            <ul id="links">
+              <li><a href="login.html">Sign In</a></li>
+              <li><a href="register.html"> Sign Up</a></li>
+            </ul>
+            <ul id="user_info">
+              <li><a href="#" id="user"></a></li>
+              <li class="ShoppingCart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge"></span>
+                
+                <div class="carts-products">
+                  <div></div>
+                 
+                  <a href="">view all products</a>
+                 
+                </div>
+
+              </li>
+
+              <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+ 
+    <section class="home">
+      <div class="container">
+        <div class="products">
+          <div class="noProduct"></div>
+
+         
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="Js/user.js"></script>
+    <script src="Js/data.JS"></script>
+
+    
+ <!-- <script src="Js/script.js"></script> -->
+
+    
+
+  </body>
+</html>

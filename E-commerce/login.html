@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <!-- Link CSS -->
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: "Oswald", sans-serif;
+      }
+
+      .container {
+          width: 80%;
+          margin: auto;
+      }
+
+      header {
+          background-color: #333;
+          padding: 10px 0;
+      }
+
+      .header-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .header-content .brand {
+          font-size: 32px;
+          text-decoration: none;
+          color: #fff;
+      }
+
+      nav ul {
+          display: flex;
+          list-style: none;
+      }
+
+      nav li a {
+          display: block;
+          color: white;
+          min-width: 50px;
+          padding: 5px;
+          margin: 0px 5px;
+      }
+
+      /* Form section */
+      .section-form {
+          margin: 20px auto;
+          text-align: center;
+      }
+
+      .section-form h2 {
+          margin-bottom: 20px;
+      }
+
+      .section-form input {
+          display: block;
+          margin: 10px auto;
+          padding: 10px;
+          width: 80%;
+          max-width: 400px;
+      }
+
+      .section-form a {
+          display: block;
+          margin-top: 10px;
+      }
+    </style>
+    
+    <title>Shopping Cart | Login Page</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand">Shopping Cart</a>
+                <nav>
+                    <ul>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-form">
+        <h2>Login User</h2>
+        <form>
+            <input type="text" placeholder="Enter Username..." id="username">
+            <input type="password" placeholder="Enter Password..." id="password">
+            <input type="submit" value="Sign In" id="sign_in">
+            Not have an Account? <a href="register.html">Sign Up</a>
+        </form>
+    </section>
+    
+    <script src="Js/login.js"></script>
+</body>
+</html>
